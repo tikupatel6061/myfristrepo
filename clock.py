@@ -23,4 +23,4 @@ def next_alarm_datetime(alarm_str: str) -> dt.datetime:
     hh, mm = parts[0], parts[1]
     ss = parts[2] if len(parts) == 3 else 0
     target = now.replace(hour=hh, minute=mm, second=ss, microsecond=0)
-    if target <= now:  # schedule for tom
+
